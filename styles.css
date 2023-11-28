@@ -1,40 +1,40 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "viz1 viz3 viz5"
-        "viz2 viz4 viz6";
     gap: 20px;
-    width: 100%;
+    width: 50%;
     max-width: 1440px;
     align-items: start;
 }
 
+/* Defualt size, viz6 is using this bc its the biggest */
 .visualization {
-    width: 480px;
+    position: relative;
+    width: 685px;
+    height: 585px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: darkolivegreen;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+h2 {
+    color: darkcyan;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.whole_box{
+    border: 2px solid black;
+}
+
+#vis7 {
+    width: 640px;
+}
+
+#vis8 {
+    width: 470px;
     height: 300px;
-}
-
-#vis1 {
-    grid-area: viz1;
-}
-
-#vis2 {
-    grid-area: viz2;
-}
-
-#vis3 {
-    grid-area: viz3;
-}
-
-#vis4 {
-    grid-area: viz4;
-}
-
-#vis5 {
-    grid-area: viz5;
-}
-
-#vis6 {
-    grid-area: viz6;
 }

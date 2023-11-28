@@ -1,5 +1,4 @@
-
-
+//-------------ALEX BONILLA------------------------------------------------
 const spec6 = {
   $schema: "https://vega.github.io/schema/vega/v5.json",
   background: "white",
