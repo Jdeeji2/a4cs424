@@ -24,28 +24,57 @@
 </head>
 
 <body>
-    <a href="index2.html">
-        <button>Go to Page 2</button>
+    <a href="index.html">
+        <button>Go to Page 1</button>
     </a>
-    <h1>CS 424 Creative ana-lit-ics - CDPH environmental complaints 2D</h1>
+    <h1>CS 424 Creative ana-lit-ics - CDPH environmental complaints Interactive</h1>
     <h3>The following data we are taking is named “CDPH environmental complaints''. It was first created in 2012 and was last updated in September 2023. 
         The set contains data dating back from January 1993 and was collected by the Department of Environment from 1993 to 2011. The DOE then disbanded 
         in 2012 and transferred all its inspection, permitting, and enforcement authorities to the Department of Public Health.</h3>
     <div class="grid">
 
         <div class="whole_box">
+            <h2>Multi View #1: Total Complaints Over Years</h2>
+            <div class="visualization" id="vis6">
+            </div>
+        </div>
+        
+        <div class="whole_box">
+            <h2>Multi View #2: Top 4 Complaints Types</h2>
+            <div class="visualization" id="vis7">
+            </div>
+        </div>
+        
+
+        <div class="whole_box">
+            <h2>Multi View #3: Top 10 Inspectors and Most Frequently Visted Areas</h2>
+            <div class="visualization" id="vis8">
+            </div>
+        </div>
+        <!-- <div class="whole_box">
             <h2>Complaints  by Direction Over Time</h2>
             <div class="visualization" id="vis9">
-            </div>
+            </div> -->
         </div>
 
         <div class="whole_box">
+            <h2>Multi View #4 + Spacial View: Complaint Map</h2>
+            <div>
+              <label for="complaintType">Complaint Type:</label>
+              <select id="complaintType"></select>
+            </div>
+            <div>
+              <label for="yearSlider">Year: <span id="yearDisplay"></span></label>
+              <input type="range" id="yearSlider" min="1993" max="2023" step="1">
+            </div>
+            <div id="map" class="visualization"></div>
+            <h2>Complaints Over Time</h2>
+            <div id="lineChart" class="visualization"></div>
+          </div>
+          <!-- <div class="whole_box">
             <h2>Total Complaints Over Years Lollipop</h2>
             <div class="visualization" id="lollipop-chart"></div>
-        </div>
-
-      
-        <div id="map" class="visualization" style="display: none;"></div>
+        </div> -->
         
     <script src="./script.js"></script>
 </body>
